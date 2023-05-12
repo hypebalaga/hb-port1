@@ -88,7 +88,7 @@ import dj_database_url
 
 DATABASES = {
     "default": dj_database_url.parse(
-        "postgres://hbport_user:Ffhlocf2gyZmIh3EvV7GT8cgOwL80YcH@dpg-chf0ubm4dad1jq9nr2u0-a.ohio-postgres.render.com/hbport"
+        "postgres://hbport_user:Ffhlocf2gyZmIh3EvV7GT8cgOwL80YcH@dpg-chf0ubm4dad1jq9nr2u0-a/hbport"
     )
 }
 
