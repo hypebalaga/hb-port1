@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-!mnkz3mcjd4r%ds8g3p_r70_d&0klit#s!dwzlx0jb*&2r31uc"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -78,13 +78,19 @@ WSGI_APPLICATION = "hb.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
+import dj_database_url
 
+DATABASES = {
+    "default": dj_database_url.parse(
+        "postgres://hbport_user:Ffhlocf2gyZmIh3EvV7GT8cgOwL80YcH@dpg-chf0ubm4dad1jq9nr2u0-a.ohio-postgres.render.com/hbport"
+    )
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
