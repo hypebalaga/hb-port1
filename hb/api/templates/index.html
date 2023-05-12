@@ -1,0 +1,441 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+   
+        <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image section-custom" aria-label="home" style="background-image: url('{% static 'api/images/hero-bg.jpg' %}')">
+
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, eveniet.
+              </h1>
+
+              <p class="hero-text">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, cum tempore quo expedita quia reiciendis dolorum quos sit sint modi!
+              </p>
+<!-- <a href="http://p.njw.bz/21091" class="btn btn-contact">Open Your Account</a> -->
+              <div class="btn-wrapper">
+                <a href="http://p.njw.bz/21091" class="btn btn-contact">Open Your Account</a>
+
+                <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                  Contact Us
+                </button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span className="close-btn" aria-hidden="true">X</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">Name</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Name">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">Contact Number</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your number">
+                          </div>
+                        
+                          <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Enter your query</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-submit">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="hero-slider" data-slider>
+
+              <div class="slider-inner">
+                <ul class="slider-container" data-slider-container>
+  
+                  <li class="slider-item">
+  
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="{% static 'api/images/hero-slide-1.jpg' %}" width="575" height="550" alt="" class="img-cover">
+                    </figure>
+  
+                  </li>
+  
+                
+  
+                </ul>
+              </div>
+             
+            </div>
+          </div>
+        </section>
+        <section>
+          
+        </section>
+        
+        <section class="section feature" aria-labelledby="feature-label" id="section2">
+          <div class="container">
+  
+            <figure class="feature-banner">
+              <img src="{% static 'api/images/feature-banner.png' %}" width="800" height="531" loading="lazy" alt="feature banner" class="w-100">
+
+            </figure>
+  
+            <div class="feature-content">
+  
+              <h3 class="section-subtitle" id="feautre-label">About Us</h3>
+  
+              <h2 class="h2 section-title">
+              Lorem ipsum dolor, sit amet consectetur 
+              </h2>
+  
+              <p class="section-text">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sed maiores quo possimus similique, harum quia nam consequuntur est temporibus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, sunt?
+              </p>
+  
+             
+  
+            </div>
+  
+          </div>
+        </section>
+  
+        
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section class="section service pt-10" aria-labelledby="service-label" id="section3">
+          <div class="container">
+            <p class="section-subtitle" id="service-label">Our Services</p>
+
+            <h2 class="h2 section-title">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, sit.
+            </h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">service 1</h3>
+
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo ab quae odit possimus iure repudiandae blanditiis hic culpa veritatis consequuntur!
+                  </p>
+
+               
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="shield-checkmark-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">Service 2</h3>
+
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea dolores voluptatibus eveniet laudantium similique debitis iure nihil rerum voluptas perspiciatis.                 
+                  </p>
+
+                 
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="cloud-download-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">Service 3</h3>
+
+                  <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptas totam consequuntur itaque est, quam mollitia in pariatur non possimus.
+                  </p>
+
+                 
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="pie-chart-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">Service 4</h3>
+
+                  <p class="card-text">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam distinctio tenetur vitae atque et nam debitis! Ipsam, corrupti eligendi.
+                  </p>
+
+               
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+    
+
+      <section class="section project" aria-labelledby="project-label" id="section4" >
+        <div class="container">
+
+          <p class="section-subtitle" id="project-label">Blogs</p>
+
+          <h2 class="h2 section-title">
+            Check out some of our blogs
+          </h2>
+
+          <ul class="grid-list">
+           {% for blog in Post %}
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="{{ blog.thumbnail.url }}" width="560" height="350" loading="lazy" alt="Ligula tristique quis risus" class="img-cover">
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="{% url 'blog' blog.id %}" class="card-title">{{ blog.title }}</a>
+                   
+                  </h3>
+
+                  <p class="card-text">
+                    {{ blog.description|truncatechars:100 }}...
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-04-14">{{ blog.created_at }}</time>
+                    </li>
+
+  
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+ 
+           
+          
+            {% endfor %}
+
+          </ul>
+
+        </div>
+        <div class="read-more"><a class="btn btn-read" href="/api/blog/">Read More</a></div>
+
+      </section>
+
+
+
+        <!-- 
+        - #STATS
+      -->
+  
+        <section class="stats" aria-label="our stats">
+          <div class="container">
+            <ul class="stats-card has-bg-image" style="background-image: url('{% static 'api/images/stats-bg.jpg' %}')">
+
+              <li>
+                <p class="card-text">
+                  <span class="h1">10</span>
+
+                  <spna class="span"> Years of Experience</spna>
+                </p>
+              </li>
+
+              <li>
+                <p class="card-text">
+                  <span class="h1">3472</span>
+
+                  <spna class="span">Happy Customers</spna>
+                </p>
+              </li>
+
+              <li>
+                <p class="card-text">
+                  <span class="h1">2184</span>
+
+                  <spna class="span">Projects</spna>
+                </p>
+              </li>
+
+              <li>
+                <p class="card-text">
+                  <span class="h1">4523</span>
+
+                  <spna class="span">Awards Won</spna>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="icon-bar">
+          <a href="https:wa.me/+918722683731" class="facebook"><i class="fa fa-whatsapp"></i></a> 
+        </div>
+
+        <div >
+          <h1 class="section-subtitle text-center" id="project-label">Testimonial</h1>
+          <p class="text-center">Masonry testimonial cards grid</p>
+      </div>
+        <section class="pt-5 pb-5">
+          <div class="container">
+            <div class="row">
+                
+                <div class="col-12">
+                    <div class="card-columns">
+        
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <blockquote class=" ">
+        
+                                    <i class="fa fa-quote-right fa-2x text-muted pull-right mt-3 mb-3" aria-hidden="true"></i>
+                                    <p class=" m-0 text-muted ">
+                                        Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi.
+                                    </p>
+                                    <footer class="blockquote-footer small p-1">
+                                        <span class="small">John Doe
+                                  <cite class="font-weight-bold">COMPANY NAME</cite>
+                                </span>
+                                    </footer>
+        
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <blockquote class=" ">
+        
+                                    <i class="fa fa-quote-right fa-2x text-muted pull-right mt-3 mb-3" aria-hidden="true"></i>
+                                    <p class=" m-0 text-muted ">
+                                        Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Etiam sed iaculis libero, at euismod massain venenatis ligula. </p>
+                                    <footer class="blockquote-footer small p-1">
+                                        <span class="small">John Doe
+                                  <cite class="font-weight-bold">COMPANY NAME</cite>
+                                </span>
+                                    </footer>
+        
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <blockquote class=" ">
+        
+                                    <i class="fa fa-quote-right fa-2x text-muted pull-right mt-3 mb-3" aria-hidden="true"></i>
+                                    <p class=" m-0 text-muted ">
+                                        Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Etiam sed iaculis libero, at euismod massain venenatis ligula. </p>
+                                    <footer class="blockquote-footer small p-1">
+                                        <span class="small">John Doe
+                                  <cite class="font-weight-bold">COMPANY NAME</cite>
+                                </span>
+                                    </footer>
+        
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <blockquote class=" ">
+        
+                                    <i class="fa fa-quote-right fa-2x text-muted pull-right mt-3 mb-3" aria-hidden="true"></i>
+                                    <p class=" m-0 text-muted ">
+                                        Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Etiam sed iaculis libero, at euismod massain venenatis ligula. </p>
+                                    <footer class="blockquote-footer small p-1">
+                                        <span class="small">John Doe
+                                  <cite class="font-weight-bold">COMPANY NAME</cite>
+                                </span>
+                                    </footer>
+        
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <blockquote class=" ">
+        
+                                    <i class="fa fa-quote-right fa-2x text-muted pull-right mt-3 mb-3" aria-hidden="true"></i>
+                                    <p class=" m-0 text-muted ">
+        
+                                        Etiam sed iaculis libero, at euismod massain venenatis ligula. </p>
+                                    <footer class="blockquote-footer small p-1">
+                                        <span class="small">John Doe
+                                  <cite class="font-weight-bold">COMPANY NAME</cite>
+                                </span>
+                                    </footer>
+        
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <blockquote class=" ">
+        
+                                    <i class="fa fa-quote-right fa-2x text-muted pull-right mt-3 mb-3" aria-hidden="true"></i>
+                                    <p class=" m-0 text-muted ">
+                                        Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Etiam sed iaculis libero, at euismod massain venenatis ligula. </p>
+                                    <footer class="blockquote-footer small p-1">
+                                        <span class="small">John Doe
+                                  <cite class="font-weight-bold">COMPANY NAME</cite>
+                                </span>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+       
+
+        <section class="cta" aria-label="call to action">
+          <div class="container">
+            <h2 class="h2 section-title">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            </h2>
+
+            <a href="#" class="btn btn-primary">Join Now</a>
+          </div>
+        </section>
+
+
+      {% endblock %}
