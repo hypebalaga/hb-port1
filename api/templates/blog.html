@@ -1,7 +1,0 @@
-{% extends "base.html" %} {% block content %} {% if Message %}
-<div class="container alert alert-danger" role="alert">{{Message}}</div>
-{% else %}
-<div class="container py-3">
-  <p>{{Post.content|safe}}</p>
-</div>
-{% endif %} {% endblock %}
