@@ -25,7 +25,7 @@ admin.site.site_url = None
 urlpatterns = (
     [
         path("admin/", admin.site.urls),
-        path("api/", include("api.urls")),
+        path("", include("api.urls")),
         path("ckeditor/", include("ckeditor_uploader.urls")),
     ]
     + static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])

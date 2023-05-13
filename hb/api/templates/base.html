@@ -54,7 +54,7 @@
 
     <header class="header" data-header id="section1">
       <div class="container">
-        <a href="#" class="logo">
+        <a href="/" class="logo">
           <img
             src="{% static 'api/images/logo-light.svg' %}"
             width="74"
@@ -74,7 +74,7 @@
 
         <nav class="navbar" data-navbar>
           <div class="navbar-top">
-            <a href="/api" class="logo">
+            <a href="/" class="logo">
               <img
                 src="{% static 'api/images/logo-light.svg' %}"
                 width="74"
@@ -94,19 +94,19 @@
 
           <ul class="navbar-list">
             <li class="home">
-              <a href="/api" class="navbar-link">Home</a>
+              <a href="/" class="navbar-link">Home</a>
             </li>
 
             <li>
-              <a href="/api#section2" class="navbar-link">About</a>
+              <a href="/#section2" class="navbar-link">About</a>
             </li>
 
             <li>
-              <a href="/api#section3" class="navbar-link">Services</a>
+              <a href="/#section3" class="navbar-link">Services</a>
             </li>
 
             <li>
-              <a href="/api/blog" class="navbar-link">Blogs</a>
+              <a href="/blog" class="navbar-link">Blogs</a>
             </li>
 
             <li>
@@ -170,12 +170,21 @@
 
     <main>
       <article>{%block content%} {% endblock %}</article>
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+          <h2 class="h2 section-title">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </h2>
+
+          <a href="#" class="btn btn-primary">Join Now</a>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="container grid-list">
         <div class="footer-brand">
-          <a href="/api" class="logo">
+          <a href="/" class="logo">
             <!-- <img
               src="./assets/images/logo-light.svg"
               width="74"
@@ -281,6 +290,66 @@
         </div>
       </div>
     </footer>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span className="close-btn" aria-hidden="true">X</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Enter Your Name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Contact Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Enter Your number"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1"
+                  >Enter your query</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- 
     - custom js link

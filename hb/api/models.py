@@ -18,3 +18,6 @@ class Blog(models.Model):
     def semantic_autocomplete(self):
         html = self.get_img()
         return format_helpers(html)
+
+    def __str__(self) -> str:
+        return f"Blog title-{self.title} written on {self.created_at.date()}"
