@@ -316,7 +316,12 @@ body.nav-active {
   height: 100%;
   object-fit: cover;
 }
-
+.subtitle-blogs {
+  margin-top: 60px;
+}
+.individual-blogs {
+  margin-top: 127px !important;
+}
 .section-subtitle {
   font-size: 30px;
   /* text-transform: uppercase; */
@@ -356,12 +361,15 @@ body.nav-active {
   left: 0;
   width: 100%;
   padding-block: 20px;
+  background: #00000021;
   box-shadow: var(--shadow-1);
   z-index: 4;
+  height: 12vh;
 }
 
 .header.active {
-  background-color: var(--white);
+  background-color: #0000007a;
+
   position: fixed;
   animation: slideIn 0.5s ease forwards;
 }
@@ -1082,7 +1090,7 @@ label {
   }
 
   .navbar-link {
-    color: var(--white);
+    color: #ffffffc7;
     transition: var(--transition-1);
   }
 
@@ -1090,9 +1098,9 @@ label {
     opacity: 0.7;
   }
 
-  .header.active .navbar-link {
-    color: var(--charcoal);
-  }
+  /* .header.active .navbar-link {
+    color: white;
+  } */
 
   .header.active .navbar-link:is(:hover, :focus-visible) {
     opacity: 1;
@@ -1296,7 +1304,9 @@ li a:hover {
   text-decoration: none;
   color: white;
 }
-
+.nav-contact {
+  color: #ffffffc7 !important;
+}
 .nav-contact:hover {
   cursor: pointer;
   color: white !important;
