@@ -27,7 +27,7 @@ urlpatterns = (
     [
         path("admin/", admin.site.urls),
         path("", include("api.urls")),
-        path('wa.me/+918722683731', lambda request: redirect('https://wa.me/+918722683731'))
+        path('wa.me/+91944835656', lambda request: redirect('https://wa.me/+91944835656'))
     ]
     + static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
     + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
