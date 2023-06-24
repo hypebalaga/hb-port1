@@ -946,7 +946,7 @@ body.nav-active {
 }
 .blog-image {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 580px;
 }
 .blog-video {
   display: flex;
@@ -977,11 +977,11 @@ label {
     flex-direction: column;
   }
   .feature-banner img {
-    width: 350px;
+    width: 330px;
     margin: 0 auto;
   }
   .feature-content {
-    width: 350px;
+    width: 330px;
     margin: 0 auto;
   }
   .service-container {
@@ -989,7 +989,7 @@ label {
     align-items: center;
   }
   .blog-image {
-    max-width: 350px;
+    max-width: 330px;
   }
 }
 
