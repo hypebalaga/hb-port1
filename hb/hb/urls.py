@@ -18,6 +18,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
+from django.shortcuts import redirect
 
 admin.site.site_header = "SUVITA INVESTOR ADMIN SITE"
 admin.site.index_title = "Admin Site Administration"
@@ -26,6 +27,7 @@ urlpatterns = (
     [
         path("admin/", admin.site.urls),
         path("", include("api.urls")),
+        path('wa.me/+918722683731', lambda request: redirect('https://wa.me/+918722683731'))
     ]
     + static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
     + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
