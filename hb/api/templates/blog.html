@@ -1,7 +1,17 @@
-{% extends "base.html" %} {% block content %} {% if Message %}
+{% extends "base.html" %} {% block content %} {% if Message %} {% load static %}
 <div class="container alert alert-danger" role="alert">{{Message}}</div>
 {% else %}
 <div class="container py-3 blog" style="margin-top: 114px">
+  <h1 class="blog-title">{{Post.title}}</h1>
+  {% if Image %} {% if Image %}
+  <img src="{% static Image %}" alt="Blog Image" class="blog-image" />
+  {% endif %} {% endif %} {% if Post.video %}
+  <div class="blog-video">
+    <iframe height="420px" src="{{ Post.video }} "></iframe>
+  </div>
+
+  {% endif %}
+
   <p>{{Post.content|safe}}</p>
 </div>
 {% endif %} {% endblock %}

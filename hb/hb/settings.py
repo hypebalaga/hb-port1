@@ -32,7 +32,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "ckeditor",
     "api",
     "semantic_admin",
     "django.contrib.admin",
@@ -130,7 +129,3 @@ STATIC_URL = "/static/"
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
-CKEDITOR_UPLOAD_PATH = "media/uploads/"
-CKEDITOR_CONFIGS = {
-    "default": {"toolbar": "full", "width": 1500},
-}

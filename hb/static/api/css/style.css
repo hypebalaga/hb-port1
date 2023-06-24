@@ -1,14 +1,3 @@
-/*-----------------------------------*\
-  #main.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
 :root {
   /**
@@ -314,7 +303,7 @@ body.nav-active {
 .img-cover {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 .subtitle-blogs {
   margin-top: 60px;
@@ -332,7 +321,7 @@ body.nav-active {
 
 .grid-list {
   display: grid;
-  gap: 25px;
+  gap: 20px;
 }
 
 .btn-submit {
@@ -608,29 +597,26 @@ body.nav-active {
 }
 
 .service .section-title {
-  margin-block-end: 50px;
+  margin-block-end: 20px;
 }
 
 .service-card {
   padding: 40px;
+  width: 300px;
+  height: 400px;
   box-shadow: var(--shadow-2);
   border-radius: var(--radius-6);
 }
 
 .service-card .card-icon {
-  width: 60px;
-  height: 60px;
+  height: 50px;
+  width: 50px;
   background-color: var(--violet-blue-crayola);
   display: grid;
   place-items: center;
-  color: var(--white);
-  font-size: 2.5rem;
+  color: var(--white) !important;
   border-radius: var(--radius-circle);
   margin-inline: auto;
-}
-
-.service-card .card-icon ion-icon {
-  --ionicon-stroke-width: 50px;
 }
 
 .service-card .card-title {
@@ -659,7 +645,10 @@ body.nav-active {
 .service-card .btn-text:is(:hover, :focus-visible) {
   opacity: 0.9;
 }
-
+.svg-icon {
+  width: 40px;
+  padding: 5px;
+}
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
@@ -718,7 +707,7 @@ body.nav-active {
 \*-----------------------------------*/
 
 .feature .container {
-  display: grid;
+  display: flex;
   gap: 50px;
 }
 
@@ -739,15 +728,22 @@ body.nav-active {
 
 .feature-card .card-icon {
   background-color: var(--lavender-web);
-  font-size: 1.4rem;
+  font-size: 2rem;
   padding: 4px;
+  color: white;
   border-radius: var(--radius-circle);
 }
 
 .feature-card .card-icon ion-icon {
   --ionicon-stroke-width: 40px;
 }
-
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
 /*-----------------------------------*\
   #STATS
 \*-----------------------------------*/
@@ -912,7 +908,12 @@ body.nav-active {
   padding-inline: 24px;
   font-weight: var(--fw-700);
 }
-
+.service-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -943,6 +944,17 @@ body.nav-active {
 .form-control:focus {
   border: none;
 }
+.blog-image {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.blog-video {
+  display: flex;
+  justify-content: center;
+}
+.blog-title {
+  text-align: center;
+}
 /**
  * responsive for large than 768px screen
  */
@@ -961,7 +973,26 @@ label {
     text-align: center;
     margin-top: -90px;
   }
+  .about-container {
+    flex-direction: column;
+  }
+  .feature-banner img {
+    width: 350px;
+    margin: 0 auto;
+  }
+  .feature-content {
+    width: 350px;
+    margin: 0 auto;
+  }
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog-image {
+    max-width: 350px;
+  }
 }
+
 @media (min-width: 768px) {
   /**
    * CUSTOM PROPERTY
@@ -1205,7 +1236,7 @@ label {
    */
 
   .service .grid-list {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 
   /**
@@ -1246,10 +1277,6 @@ label {
   /**
    * REUSED STYLE
    */
-
-  .container {
-    max-width: 1320px;
-  }
 
   /**
    * FEATURE
@@ -1317,6 +1344,10 @@ li a:hover {
 }
 
 @media (max-width: 900px) {
+  .feature {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
   .icon-bar {
     position: fixed;
     padding: 20px;
@@ -1326,4 +1357,19 @@ li a:hover {
   label {
     float: left;
   }
+}
+
+.text-bold {
+  font-weight: 800;
+}
+.service-detail {
+  color: black !important;
+  text-align: justify;
+  letter-spacing: none;
+}
+
+.service-detail li {
+  list-style-type: square;
+  text-align: justify;
+  color: black !important;
 }

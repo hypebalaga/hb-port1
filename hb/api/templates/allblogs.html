@@ -1,4 +1,4 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %} {% block content %} {% load static %}
 <section class="section project" aria-labelledby="project-label" id="section4">
   <div class="container mt-3">
     <p class="section-subtitle subtitle-blogs" id="project-label">Blogs</p>
@@ -14,7 +14,7 @@
             style="--width: 560; --height: 350"
           >
             <img
-              src="{{ blog.thumbnail.url }}"
+              src="{% static 'api/images/blog-thumbnail-2.webp' %}"
               width="560"
               height="350"
               loading="lazy"
