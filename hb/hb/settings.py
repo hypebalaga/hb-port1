@@ -33,7 +33,6 @@ ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 INSTALLED_APPS = [
     "api",
-    "semantic_admin",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
