@@ -493,13 +493,13 @@ body.nav-active {
 }
 
 .hero-title {
-  color: var(--white);
+  color:#93d6fa;
 }
 
 .hero-text {
   font-size: var(--fs-5);
   color: var(--white);
-  margin-block: 24px 36px;
+  margin-block: 8px 36px 4px 0px;
 }
 .wrapper {
   margin-bottom: 130px;
@@ -603,7 +603,7 @@ body.nav-active {
 .service-card {
   padding: 40px;
   width: 300px;
-  height: 400px;
+  height: 450px;
   box-shadow: var(--shadow-2);
   border-radius: var(--radius-6);
 }
@@ -991,6 +991,10 @@ label {
   .blog-image {
     max-width: 330px;
   }
+  .feature .container{
+    flex-direction: column;
+  }
+  
 }
 
 @media (min-width: 768px) {
@@ -1082,6 +1086,11 @@ label {
 
   .feature-banner {
     order: 1;
+  }
+  
+  .service-card{
+    width: 320px;
+    height: 400px;
   }
 }
 
@@ -1357,19 +1366,163 @@ li a:hover {
   label {
     float: left;
   }
+  
 }
+@media (max-width: 1620px) {
 
+  .service-card{
+    width: 600px;
+    height: 300px;
+    
+  }
+  
+  .service-container{
+    flex-direction: column;
+    flex-wrap: wrap;
+   align-items: center;
+  }
+}
+@media (max-width: 990px) {
+
+  .service-card{
+    width: 340px;
+    height: 370px;
+    
+  }
+  .about-container {
+    flex-direction: column;
+  }
+  
+  .service-container{
+    flex-direction: column;
+    flex-wrap: wrap;
+   align-items: center;
+  }
+}
 .text-bold {
   font-weight: 800;
+  font-size: 24px;
+}
+.text-sub{
+  font-weight: 600;
+  font-size: 14px;
+}
+.text-sub-2{
+ 
+  font-size: 18px;
 }
 .service-detail {
+  padding: 5px;
   color: black !important;
-  text-align: justify;
-  letter-spacing: none;
+
 }
 
 .service-detail li {
   list-style-type: square;
-  text-align: justify;
+  line-height: 2;
+  text-align:left;
+
   color: black !important;
+}
+
+
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel-item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+.carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #db584e;
+}
+.carousel .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+.typewriter {
+  position: relative;
+  max-width: 420px;
+  font-size: 12px;
+}
+
+.typewriter h2 {
+  font-style: italic;
+  white-space: nowrap;
+  color: yellow;
+  letter-spacing: 0.15em;
+  display: inline-block; /* Display h1 as inline-block to make the cursor appear next to the text */
+}
+
+.typewriter .cursor {
+  position: absolute;
+  left: 100%; /* Position the cursor after the text */
+  top: 0;
+  opacity: 1; /* Initially show the cursor */
+  animation: blink 0.7s infinite;
+}
+
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
 }

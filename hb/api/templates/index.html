@@ -13,15 +13,62 @@
               <h1 class="h1 hero-title">
                 Investment planning made simple, for a secure and prosperous tomorrow
               </h1>
-
+              
               <p class="hero-text">
-               Suvita Investor Services
-               <br>
-               <b class="text-bold">AMFI-Registered Mutual Fund Distributor</b>
-              </p>
+                <b class="text-bold">Suvita Investor Services</b>
+                <br>
+                <span class="text-sub">Envision-Invest-Rejoice</span>
+                <span class="text-sub-2">AMFI-Registered Mutual Fund Distributor</span>
+               </p>
+              <div class="pb-3 typewriter">
+                <h2 id="text"></h2>
+                <span class="cursor" id="cursor">|</span>
+              </div>
+              <script>
+                const phrases = [
+                  "Children's Education",
+                  "Annual Holiday Plan",
+                  "Repay Your Home Loan Early",
+                  "Loan-free Dream House",
+                  "Build an Emergency Fund",
+                  "Don't Live Poor and Die Rich",
+                  "For Philanthropy",
+                  "Any Other Financial Plans",
+                ];
+            
+                let index = -1;
+                const textElement = document.getElementById('text');
+                const cursorElement = document.getElementById('cursor');
+
+                function typeLetter() {
+                  const text = phrases[index];
+                  const letter = text.substring(0, textElement.textContent.length + 1);
+                  textElement.textContent = letter;
+                  if (letter === text) {
+                    setTimeout(typewriterEffect, 800); 
+                  } else {
+                    setTimeout(typeLetter, 100); 
+                  }
+                }
+
+                function typewriterEffect() {
+                  index++;
+                  if (index === phrases.length) {
+                    index = 0;
+                  }
+
+                  const nextText = phrases[index];
+                  textElement.textContent = ''; // Clear the text
+                  cursorElement.style.opacity = 1; // Show the cursor
+
+                  typeLetter(); // Start typing the letters
+                }
+                setTimeout(typewriterEffect, 2000);
+              </script>
+              
 <!-- <a href="http://p.njw.bz/21091" class="btn btn-contact">Open Your Account</a> -->
               <div class="btn-wrapper">
-                <a href="http://p.njw.bz/21091" class="btn btn-contact">Open Your Account</a>
+                <a href="http://p.njw.bz/21091" class="btn btn-contact">Open MF Trading A/C</a>
 
                 <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
                   Contact Us
@@ -297,116 +344,60 @@
         </div>
 
         <div >
-          <h1 class="section-subtitle text-center" id="project-label">Testimonial</h1>
-          <p class="text-center">Masonry testimonial cards grid</p>
+          <h1 class="section-subtitle text-center pt-5" id="project-label">Testimonial</h1>
+          <p class="text-center">Real Stories, Real Smiles: Hear It From Our Clients!</p>
       </div>
-        <section class="pt-5 pb-5">
+        <section class=" pb-5">
           <div class="container">
             <div class="row">
-                
-                <div class="col-12">
-                    <div class="card-columns">
-        
-                        <div class="card mb-">
-                            <div class="card-body">
-                                <blockquote class=" ">
-        
-                                    <i class="fa fa-quote-right fa-2x text-muted pull-right mt-3 mb-3" aria-hidden="true"></i>
-                                    <p class=" m-0 text-muted ">
-                                        Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi.
-                                    </p>
-                                    <footer class="blockquote-footer small p-1">
-                                        <span class="small">John Doe
-                                  <cite class="font-weight-bold">COMPANY NAME</cite>
-                                </span>
-                                    </footer>
-        
-                                </blockquote>
-                            </div>
-                        </div>
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <blockquote class=" ">
-        
-                                    <i class="fa fa-quote-right fa-2x text-muted pull-right mt-3 mb-3" aria-hidden="true"></i>
-                                    <p class=" m-0 text-muted ">
-                                        Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Etiam sed iaculis libero, at euismod massain venenatis ligula. </p>
-                                    <footer class="blockquote-footer small p-1">
-                                        <span class="small">John Doe
-                                  <cite class="font-weight-bold">COMPANY NAME</cite>
-                                </span>
-                                    </footer>
-        
-                                </blockquote>
-                            </div>
-                        </div>
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <blockquote class=" ">
-        
-                                    <i class="fa fa-quote-right fa-2x text-muted pull-right mt-3 mb-3" aria-hidden="true"></i>
-                                    <p class=" m-0 text-muted ">
-                                        Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Etiam sed iaculis libero, at euismod massain venenatis ligula. </p>
-                                    <footer class="blockquote-footer small p-1">
-                                        <span class="small">John Doe
-                                  <cite class="font-weight-bold">COMPANY NAME</cite>
-                                </span>
-                                    </footer>
-        
-                                </blockquote>
-                            </div>
-                        </div>
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <blockquote class=" ">
-        
-                                    <i class="fa fa-quote-right fa-2x text-muted pull-right mt-3 mb-3" aria-hidden="true"></i>
-                                    <p class=" m-0 text-muted ">
-                                        Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Etiam sed iaculis libero, at euismod massain venenatis ligula. </p>
-                                    <footer class="blockquote-footer small p-1">
-                                        <span class="small">John Doe
-                                  <cite class="font-weight-bold">COMPANY NAME</cite>
-                                </span>
-                                    </footer>
-        
-                                </blockquote>
-                            </div>
-                        </div>
-                       <div class="card mb-4">
-                            <div class="card-body">
-                                <blockquote class=" ">
-        
-                                    <i class="fa fa-quote-right fa-2x text-muted pull-right mt-3 mb-3" aria-hidden="true"></i>
-                                    <p class=" m-0 text-muted ">
-                                        Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Etiam sed iaculis libero, at euismod massain venenatis ligula. </p>
-                                    <footer class="blockquote-footer small p-1">
-                                        <span class="small">John Doe
-                                  <cite class="font-weight-bold">COMPANY NAME</cite>
-                                </span>
-                                    </footer>
-        
-                                </blockquote>
-                            </div>
-                        </div>
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <blockquote class=" ">
-        
-                                    <i class="fa fa-quote-right fa-2x text-muted pull-right mt-3 mb-3" aria-hidden="true"></i>
-                                    <p class=" m-0 text-muted ">
-                                        Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Etiam sed iaculis libero, at euismod massain venenatis ligula. </p>
-                                    <footer class="blockquote-footer small p-1">
-                                        <span class="small">John Doe
-                                  <cite class="font-weight-bold">COMPANY NAME</cite>
-                                </span>
-                                    </footer>
-        
-                                </blockquote>
-                            </div>
-                        </div>
-                       
+              <div class="col-md-8 col-center m-auto">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                  <!-- Carousel -->
+                  <div class="carousel-inner">
+                    <div class="item carousel-item active">
+                      <div class="img-box"><img src="{% static 'api/images/LaxmanKudva.jpg' %}" alt=""></div>
+                      <p class="testimonial">"I am incredibly satisfied and grateful for the exceptional service provided by Suvita Investor Services. Their knowledgeable team, personalized approach, and commitment to transparency make them an outstanding choice for investment management services."
+                      </p>
+                      <p class="overview">-<b>K. Laxman Kudva</b></p>
                     </div>
+                    <div class="item carousel-item">
+                      <div class="img-box"><img src="{% static 'api/images/VijeshShenoy.jpg' %}" alt=""></div>
+                      <p class="testimonial">"I am writing this as a token of genuine appreciation to Suvita Investor Services. From my experience with this firm, I truly believe this is the right answer for anyone and everyone looking for mutual funds investment advice. The patience with which they listen to deliver the best financial advise to their clients is quite remarkable and recommended to all. 
+                        <br><br>
+                        The advisor’s practical knowledge, professionalism and implementation is phenomenal and I will definitely recommend Suvita Investor Services to all my friends and relatives seeking for mutual funds investment advise or other sorts of financial planning.
+                        "</p>
+                      <p class="overview">-<b>Vijesh Shenoy K</b></p>
+                    </div>
+                    <div class="item carousel-item">
+                      <div class="img-box"><img src="{% static 'api/images/user.jpg' %}" alt=""></div>
+                      <p class="testimonial">"I’m a person with the least know-how of investments, but selecting Suvita Investor Services as my mutual funds advisor a few months ago was an excellent move. My advisor has been managing my investments well with his valuable expertise. Right from the moment I decided to start investing, despite being overwhelmed and not certain where to start, I have received exceptional guidance and support.
+                        <br><br>
+                        From taking the time to patiently listen to my financial goals and investment preferences to  explaining the complex mutual funds concepts in simple terms, Suvita Investor Services has done a commendable job. Thanks to the guidance I’m receiving, I can see my investments experiencing a steady growth, making me feel confident about my financial future.
+                        <br><br>
+                        Anyone seeking professional assistance to manage their investments, especially those with limited knowledge in this domain, must definitely select Suvita Investor Services."
+                        </p>
+                      <p class="overview">-<b>Suchitra Shenoy</b></p>
+                    </div>
+                    <div class="item carousel-item">
+                      <div class="img-box"><img src="{% static 'api/images/NareshPai.jpg' %}" alt=""></div>
+                      <p class="testimonial">"Suvita Investor Services has helped me not only in terms of returns but also becoming better as an investor in understanding businesses and markets" 
+
+                        </p>
+                      <p class="overview">-<b>Naresh Pai P</b></p>
+                    </div>
+                  </div>
+                  <!-- Carousel Controls -->
+                  <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                  </a>
+                  <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                    <i class="fa fa-angle-right"></i>
+                  </a>
                 </div>
+              </div>
+            </div>
+          </div>
+          
             </div>
         </div>
         </section>
@@ -415,3 +406,5 @@
         
 
       {% endblock %}
+
+     

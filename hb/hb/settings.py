@@ -69,7 +69,7 @@ TEMPLATES = [
         },
     },
 ]
-
+# application for hosted env
 WSGI_APPLICATION = "hb.wsgi.application"
 
 
