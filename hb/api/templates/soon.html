@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <title>Suvita Investor Services</title>
+  <meta name="title" content="Suvita Investor Services" />
+  <meta name="description" content="Suvita Investor solution" />
+  <link
+    rel="shortcut icon"
+    href="{% static 'api/images/logo.png' %}"
+    type="image/svg+xml"
+  />
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .bgimg {
+      background: rgb(195, 177, 34);
+      background: linear-gradient(
+        230deg,
+        rgba(195, 177, 34, 1) 0%,
+        rgba(253, 107, 45, 1) 100%
+      );
+      height: 100%;
+
+      position: relative;
+      color: white;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 25px;
+    }
+
+    .topleft {
+      position: absolute;
+      top: 0;
+      left: 16px;
+    }
+
+    .middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    hr {
+      margin: auto;
+      width: 40%;
+    }
+  </style>
+  <body>
+    <div class="bgimg">
+      <div class="topleft"></div>
+      <div class="middle">
+        <img src="{% static 'api/images/logo.png' %}" alt="" />
+        <h1>COMING SOON</h1>
+        <hr />
+        <p id="demo" style="font-size: 30px"></p>
+      </div>
+    </div>
+
+    <script>
+      var countDownDate = new Date("Oct 24, 2023 15:37:25").getTime();
+
+      var countdownfunction = setInterval(function () {
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+        document.getElementById("demo").innerHTML =
+          "Launching in " + days + " days";
+
+        if (distance < 0) {
+          clearInterval(countdownfunction);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 500);
+    </script>
+  </body>
+</html>

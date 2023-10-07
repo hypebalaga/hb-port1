@@ -7,7 +7,8 @@ from .constants import blogs
 def index(request):
     Post = blogs[:3]
     context = {"Post": Post}
-    return render(request, "index.html", context)
+    return render(request,"soon.html")
+    #return render(request, "index.html", context)
 
 
 def blog(request, id):
@@ -21,10 +22,12 @@ def blog(request, id):
     
     except Exception as e:
         context = {"Message": e}
-    return render(request, "blog.html", context)
+    return render(request,"soon.html")
+    #return render(request, "blog.html", context)
 
 
 def allblog(request):
     Post =blogs
     context = {"Post": Post}
-    return render(request, "allblogs.html", context)
+    return render(request,"soon.html")
+    #return render(request, "allblogs.html", context)
