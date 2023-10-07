@@ -1526,3 +1526,12 @@ li a:hover {
   from, to { opacity: 1; }
   50% { opacity: 0; }
 }
+
+.footer_hb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_hb:hover {
+  color: orange;
+}
