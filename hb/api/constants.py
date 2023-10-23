@@ -18,7 +18,7 @@ blogs=[
 <p>As we move further into the 21st century, the definition of wealth continues to evolve. It is no longer solely measured by financial assets but also encompasses adaptability, continuous learning, and strategic money management. By embracing these principles, individuals can proactively navigate the challenges posed by a young and educated population, while also capitalizing on the opportunities presented by a developing economy on its path to becoming developed.</p>
 ''',
            "description":"In the transition from developing to developed economies, the concept of wealth is undergoing a significant transformation. As these economies evolve, a young and educated population becomes a valuable asset, contributing to the growth of a robust consumer market that garners global attention and admiration.",
-           "created_at":"24/Jun/2023"
+           "created_at":"4/Jun/2023"
           
         },
         {
@@ -85,7 +85,7 @@ In conclusion, investing is not just a desirable financial endeavor; it is an es
 <p style="margin-left:0px;">By consulting with a Mutual Fund Distributor, you can gain valuable insights into the investment process, select suitable mutual fund schemes, and create a well-rounded investment portfolio. They can also assist in monitoring your investments, providing regular updates, and suggesting adjustments as needed.</p>
 <p style="margin-left:0px;">&nbsp;</p>
 ''',
-          "created_at":"24/Jun/2023"
+          "created_at":"1/July/2023"
         },
         {
            "id":'4',
@@ -130,7 +130,7 @@ Take your First Step TODAY
 <p><span style="background-color:transparent;color:#000000;">10. Foster a Supportive Community: Create a community or platform where like-minded individuals can connect, share experiences, and support each other on their financial freedom journey. Collaboration and encouragement can be powerful motivators.</span></p>
 <p>&nbsp;</p>
 <p><span style="background-color:transparent;color:#000000;">Remember, achieving financial freedom and retiring early is a long-term commitment that requires discipline, perseverance, and informed decision-making. By sharing your vision and taking these steps, you can inspire others to take control of their finances, accumulate wealth, and ultimately live life on their own terms</span></p>''',
-           "created_at":"24/Jun/2023"
+           "created_at":"8/Aug/2023"
           
         },
           {
@@ -151,7 +151,7 @@ Take your First Step TODAY
 <p><span style="background-color:transparent;color:#000000;">4. Emotional Discipline: Investing can be emotionally challenging, especially during times of market volatility. Professional money managers provide a level-headed perspective and help you maintain discipline in the face of market fluctuations. They base decisions on a well-defined investment strategy and long-term goals, rather than succumbing to short-term market noise or emotional impulses.</span></p>
 <p>&nbsp;</p>
 <p><span style="background-color:transparent;color:#000000;">Regarding the timing of investments, the adage "the best time to invest was yesterday, and the next best time is today" highlights the importance of taking action as soon as possible. While it's true that investing earlier allows you to benefit from compounding returns over a longer time horizon, it's essential to remember that timing the market perfectly is incredibly difficult. Instead, adopting a disciplined approach and investing regularly, regardless of short-term market fluctuations, can be a more reliable strategy.</span></p>''',
-           "created_at":"24/Jun/2023"
+           "created_at":"28/Sept/2023"
           
         }
     ]
